@@ -27,6 +27,7 @@ echo "Please enter function name,string/filename to proceed"
 ;;
 3)
 
+
 #There are two scenarios here: 
 #TC-1 
 #When user doesn't enter file name, app bydefault grep from info.log

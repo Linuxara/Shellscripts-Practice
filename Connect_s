@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "Enter servername and number"
+echo "Available format examples: loginpe 103,logingraphql 103,loginbf 102,loginappqa 138  "
+
 function loginpe
 {
  ssh pe$1.aqa.ind.in
@@ -6,6 +9,16 @@ function loginpe
 function logingraphql
 {
 ssh nova$1.aqa.ind.in
+}
+
+function loginbf
+{
+ssh svcb$1.aqa.ind.in
+}
+
+function loginappqa
+{
+ssh app-qa$1.aqa.ind.in
 }
 
 case $1 in
@@ -18,5 +31,16 @@ case $1 in
 	echo "Graphql Server: $2"
 	logingraphql $2
 ;;
+
+"loginbf")
+	echo "Blooming flower server : $2"
+	loginbf $2
+;;
+
+"loginqabox")
+	echo "Login to app qabox : $2"
+	loginqabox $2
+;;
+
 esac
 
