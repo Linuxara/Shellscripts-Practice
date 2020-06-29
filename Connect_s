@@ -1,0 +1,22 @@
+#!/bin/bash
+function loginpe
+{
+ ssh pe$1.aqa.ind.in
+}
+function logingraphql
+{
+ssh nova$1.aqa.ind.in
+}
+
+case $1 in
+"loginpe")
+	echo "PE Server: $2"
+	loginpe $2
+;;
+
+"logingraphql")
+	echo "Graphql Server: $2"
+	logingraphql $2
+;;
+esac
+
