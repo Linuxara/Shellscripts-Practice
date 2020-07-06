@@ -1,3 +1,45 @@
+<<<<<<< HEAD
+ng.reflect.InvocationTargetException: null
+        at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+        at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+        at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+        at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+        at org.apache.jmeter.gui.util.MenuFactory.getGUIComponent(MenuFactory.java:174) ~[ApacheJMeter_core.jar:5.2]
+        at org.apache.jmeter.gui.util.MenuFactory.initializeMenus(MenuFactory.java:141) ~[ApacheJMeter_core.jar:5.2]
+        at org.apache.jmeter.gui.util.MenuFactory.<clinit>(MenuFactory.java:106) ~[ApacheJMeter_core.jar:5.2]
+        at org.apache.jmeter.control.gui.TestPlanGui.createPopupMenu(TestPlanGui.java:92) ~[ApacheJMeter_core.jar:5.2]
+        at org.apache.jmeter.gui.tree.JMeterTreeNode.createPopupMenu(JMeterTreeNode.java:185) ~[ApacheJMeter_core.jar:5.2]
+        at org.apache.jmeter.gui.action.EditCommand.doAction(EditCommand.java:46) ~[ApacheJMeter_core.jar:5.2]
+        at org.apache.jmeter.gui.action.ActionRouter.performAction(ActionRouter.java:88) ~[ApacheJMeter_core.jar:5.2]
+        at org.apache.jmeter.gui.action.ActionRouter.lambda$actionPerformed$0(ActionRouter.java:70) ~[ApacheJMeter_core.jar:5.2]
+        at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313) ~[?:?]
+        at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770) ~[?:?]
+        at java.awt.EventQueue$4.run(EventQueue.java:721) ~[?:?]
+        at java.awt.EventQueue$4.run(EventQueue.java:715) ~[?:?]
+        at java.security.AccessController.doPrivileged(AccessController.java:391) [?:?]
+        at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85) [?:?]
+        at java.awt.EventQueue.dispatchEvent(EventQueue.java:740) [?:?]
+        at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) [?:?]
+        at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) [?:?]
+        at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) [?:?]
+        at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
+        at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
+        at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/httpclient/methods/multipart/PartSource
+        at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.init(LoadosophiaUploaderGui.java:114) ~[JMeterPlugins-Standard.jar:?]
+        at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.<init>(LoadosophiaUploaderGui.java:28) ~[JMeterPlugins-Standard.jar:?]
+        ... 26 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.httpclient.methods.multipart.PartSource
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:436) ~[?:?]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:588) ~[?:?]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[?:?]
+        at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.init(LoadosophiaUploaderGui.java:114) ~[JMeterPlugins-Standard.jar:?]
+        at kg.apc.jmeter.reporters.LoadosophiaUploaderGui.<init>(LoadosophiaUploaderGui.java:28) ~[JMeterPlugins-Standard.jar:?]
+        ... 26 more
+
+=======
 the tree command the tree command to look
  at the subdirectories tree
  dddddcommand to look
+>>>>>>> cada67a5c2e3cbd3991eaa347f914dc2ddfd3f08
