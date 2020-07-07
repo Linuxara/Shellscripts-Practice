@@ -26,7 +26,7 @@ sed -n '/'"$arg1"'/ =' monsoon1234
 2)
 echo "Argument 1: $arg1"
 echo "Argument 2: $arg2"
-sed -i '/s/'"$arg1"'/'"$arg2"'/g' monsoon1234
+sed -e 's/'"$arg1"'/'"$arg2"'/g' monsoon1234
 ;;
 
 3)
