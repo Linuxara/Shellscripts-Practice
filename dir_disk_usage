@@ -1,0 +1,43 @@
+#!/bin/bash
+path=$2
+
+case $# in 
+0)
+echo "Disk free space and total space of directory can be checked"
+echo "Enter function name as first argument to check the disk usage of a directory and second argument as path"
+;;
+
+1)
+;;
+2)
+;;
+3)
+	echo "Only two arguments allowed"
+;;
+esac
+
+function dusage
+{
+du -a $path
+}
+
+function dfree
+{
+
+df -h $path
+}
+case  $1 in 
+	"dusage")
+		echo "Directory to check disk usage $path"
+		dusage $path
+;;
+"dfree")
+	echo "Directory to check total free disk space $path"
+	dfree $path
+	exit 1
+	;;
+
+*)
+	exit 1
+	;;
+esac
