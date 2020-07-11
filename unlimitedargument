@@ -1,0 +1,13 @@
+
+#!/bin/bash
+
+#$@=MEant for unlimited parameters
+echo "Please enter few arguments"
+
+for arg in "$@" 
+do
+	echo 'Arguments are :\n' "$arg"
+done
+
+echo "Practice makesect"
+	
