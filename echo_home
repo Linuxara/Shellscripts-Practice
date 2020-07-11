@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+var1="User:123:321:/ome/dir"
+
+echo "${var1#***:}"
+
+if [ $var1 = ~*/home/* ]
+	echo $var1
+then
+echo "String found "
+else
+echo "String not found"
+fi

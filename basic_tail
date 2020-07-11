@@ -2,7 +2,7 @@
 
 #To grep expection or error in log
 
-zipdir=/var/log/process-engine-standalone-aradhana
+zipdir=/var/log/process-aradhana
 
 zipedf=info.log
 
