@@ -3,6 +3,6 @@
 #To clear all logs in Logpath
 
 URoot=$1
-
+#This removes all log files consisting of zip and swp
 find $URoot -name '*.log' -o -name '*.log.*' -o -name '*.gz' -o -name '*.swp' | xargs sudo rm -f
 
