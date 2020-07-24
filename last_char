@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read -p "Enter a string :" var 
+echo $var >> test
+sed -i 's/.*\(.....\)/\1/' test
+cat test
