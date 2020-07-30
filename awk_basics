@@ -6,12 +6,3 @@
 #awk '{ print $3 , $1 }' wordfrequ
 
 awk '{print NF, $0}' wordfrequ
-
-
-
-
-
-
-
-i
-#1
